@@ -3,8 +3,11 @@
 Чтобы поменять тип (float или double) необходимо в файле main.cpp закомментировать один из define (#define TYPE float и #define TYPE double, соответственно для float  необходимо, чтобы была раскомментированна строка #define TYPE float)
 
 Для запуска программы с make:
+
     make
+    
 Для запуска программы с cmake:
+    
     mkdir tmp
     
     cd tmp
