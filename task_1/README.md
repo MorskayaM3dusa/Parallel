@@ -6,9 +6,13 @@
     make
 Для запуска программы с cmake:
     mkdir tmp
+    
     cd tmp
+    
     cmake ..
+    
     make
+    
     ./main
 
 Вывод данных:
