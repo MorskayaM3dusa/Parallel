@@ -1,11 +1,7 @@
-Для запуска необходимо зайти в папку make для использования Makefile либо в cmake для использования CMakeLists (cd make или cd cmake)
+Для запуска необходимо зайти в папку cmake для использования CMakeLists (cd cmake)
 
 Чтобы поменять тип (float или double) необходимо в файле main.cpp закомментировать один из define (#define TYPE float и #define TYPE double, соответственно для float  необходимо, чтобы была раскомментированна строка #define TYPE float)
 
-Для запуска программы с make:
-
-    make
-    
 Для запуска программы с cmake:
     
     mkdir tmp
