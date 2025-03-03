@@ -1,0 +1,15 @@
+serial: 0.933423
+
+parallel with 2 threads: 0.483405, S = 1,93
+
+parallel with 4 threads: 0.249819, S = 3,74
+
+parallel with 7 threads: 0.147884, S = 6,31
+
+parallel with 8 threads: 0.131973, S = 7,07
+
+parallel with 16 threads: 0.077000, S = 12,12
+
+parallel with 20 threads: 0.061420, S = 15.20
+
+parallel with 40 threads: 0.056756, S = 16,45
