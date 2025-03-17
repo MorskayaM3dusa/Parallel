@@ -59,12 +59,12 @@ double run_serial()
 double run_parallel(int num_threads)
 {
     omp_set_num_threads(num_threads);
-    auto start = std::chrono::high_resolution_clock::now();
+    const auto start{std::chrono::steady_clock::now()};
     double res = integrate_omp(func, a, b, nsteps);
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration = end - start;
+    const auto end{std::chrono::steady_clock::now()};
+    const std::chrono::duration<double> elapsed_seconds{end - start};
     printf("Result (parallel with %d threads): %.12f; error %.12f\n", num_threads, res, fabs(res - sqrt(PI)));
-    return duration.count();
+    return elapsed_seconds.count();
 }
 int main(int argc, char **argv)
 {
